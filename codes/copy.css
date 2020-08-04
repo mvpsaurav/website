@@ -1,0 +1,316 @@
+body{
+  padding: 0;
+  margin: 0;
+
+}
+
+*{
+  box-sizing: border-box;
+
+}
+
+a{
+  color: black;
+
+}
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 500;
+  position: relative;
+  height: auto;
+
+}
+.header-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0px 10px;
+  font-size: 20px;
+  background: rgba(239,239,239,1);
+
+}
+.navbar{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
+
+}
+.nav-item{
+  margin: auto 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropbtn {
+  color: black;
+
+  font-size: 20px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.nav-item:hover, .dropbtn:hover {color: #2A465B;}
+
+.navigate{
+  display: flex;
+  flex-direction: row;
+
+}
+.buttonstyle{
+  border: 3px #2A465B solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+  border-radius: 15px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.buttonstyle:nth-child(1){
+  background: #2A465B;
+  color: white;
+}
+.buttonstyle:nth-child(2){
+  background: #2A465B;
+  color: white;
+}
+.buttonstyle:nth-child(2):hover{
+  background: white;
+  color: #2A465B;
+}
+.buttonstyle:nth-child(1):hover{
+  background: white;
+  color:  #2A465B;
+}
+
+#logo{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: calc(50% - 55px);
+  top: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+main{
+  background: rgba(239,239,239,1);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#main-wrapper{
+  background: white;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+h1{
+  text-align: center;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.inner {
+  max-width: 300px;
+  margin: auto;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] ~ label {
+  background: white;
+  border:  rgba(239,239,239,1) 2px solid;
+  height: 50px;
+  color: black;
+  padding: 16px;
+  display: block;
+}
+input[type=checkbox]:checked ~ label {
+  border-color: #2A465B;
+
+}
+
+.wrapper{
+  margin: 10px 0px;
+}
+
+
+#drop-area {
+  background-color: white;
+  border: 7px dashed  grey;
+  border-radius: 40px;
+  width: 60%;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 100px auto;
+  padding: 10%;
+}
+#drop-area.highlight {
+  border-color: black;
+}
+
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  vertical-align: middle;
+}
+.button1 {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #fd7e14;
+}
+#fileElem {
+  display: none;
+}
+.col{
+  margin-bottom: 10px;
+  font-size: 15px;
+
+}
+.buttonastyle{
+  border: 3px #07ce73 solid;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.search-box{
+	position: absolute;
+
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #2A465B;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+	background: white;
+}
+.search-btn{
+	color: #07ce73;
+	float: right;
+	width: 22px;
+	height: 22px;
+	border-radius: 30%;
+	background: #2A465B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 20px;
+	width: 0px;
+	transition: 0.4s;
+}
+h2{
+    text-justify: auto;
+    text-align: center;
+    font-size: 75px;
+    color:#2A465B;
+    
+}
+table{
+    border-collapse: collapse;
+}
+table th{
+    align-items: center;
+    text-align: left;
+    background-color: #3a6070;
+    color: aliceblue;
+    padding: 4px 30px 4px 8px;
+}
+
+table td{
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+table tr:nth-child(1) td{
+    background-color: #2A465B;
+    color: white;
+}
+table tr:nth-child(even) td{
+    background-color: #e7edf0;
+}
+
+
+
+
