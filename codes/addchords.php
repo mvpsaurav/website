@@ -27,7 +27,7 @@ include("config.php");
         </div>
     </form>
         <form method="get" action="panel.php">
-            <button type="submit">BACK</button>
+            <button type="Submit">BACK</button>
         </form>
     </div>
 </body>
@@ -79,6 +79,13 @@ if (isset($_POST['delete'])){
         $sql = "SELECT * FROM chords";
             
         $result = mysqli_query($conn, $sql);
+    if ($result) {
+    echo "</br><b>connect was successfully</br></b>";
+}
+else {
+    echo "</br><b>connection was not success</br></b>";
+}
+      }
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck > 0){
             while($row=mysqli_fetch_assoc($result)){
